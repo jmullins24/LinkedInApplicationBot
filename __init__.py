@@ -13,7 +13,7 @@ __version__ = '1.0.0'
 __author__ = 'LinkedIn Job Bot Developer'
 __email__ = 'example@example.com'
 
-from linkedin_job_bot.linkedin_job_bot import LinkedInJobBot
-from linkedin_job_bot.config import get_config, validate_config, create_env_template
+from .linkedin_job_bot import LinkedInJobBot
+from .config import get_config, validate_config, create_env_template
 
 __all__ = ['LinkedInJobBot', 'get_config', 'validate_config', 'create_env_template']
