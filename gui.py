@@ -20,13 +20,13 @@ from dotenv import load_dotenv
 
 # Import local modules
 try:
-    from config import get_config, validate_config
-    from linkedin_job_bot import LinkedInJobBot
+    from .config import get_config, validate_config
+    from .linkedin_job_bot import LinkedInJobBot
 except ImportError:
     # Handle case when running as standalone
     sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    from linkedin_job_bot.config import get_config, validate_config
-    from linkedin_job_bot.linkedin_job_bot import LinkedInJobBot
+    from config import get_config, validate_config
+    from linkedin_job_bot import LinkedInJobBot
 
 
 class LinkedInJobBotGUI:
